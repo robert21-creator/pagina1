@@ -3,53 +3,50 @@
 <head>
     <title>Mi Negocio de Cambio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
+        /* ... tus otros estilos ... */
 
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .nav {
-            background-color: #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: absolute;
-            bottom: 0;
+        .slider {
             width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            animation: 20s slider infinite;
+        }
+
+        .slides img {
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes slider {
+            0% { transform: translateX(0%); }
+            20% { transform: translateX(0%); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(-400%); }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Mi Negocio de Cambio</h1>
-        <p>Servicios de cambio de divisas de confianza</p>
+    <!-- ... tu código existente ... -->
+
+    <div class="slider">
+        <div class="slides">
+            <img src="imagen1.jpg" alt="Imagen 1">
+            <img src="imagen2.jpg" alt="Imagen 2">
+            <img src="imagen3.jpg" alt="Imagen 3">
+            <img src="imagen4.jpg" alt="Imagen 4">
+            <img src="imagen5.jpg" alt="Imagen 5">
+        </div>
     </div>
 
-    <div class="nav">
-        <a href="#servicios">Servicios</a> | 
-        <a href="#sobre-nosotros">Sobre Nosotros</a> |
-        <a href="#contacto">Contacto</a>
-    </div>
-
-    <!-- Aquí puedes agregar más contenido -->
-
-    <div class="footer">
-        <p>© 2023 Mi Negocio de Cambio. Todos los derechos reservados.</p>
-    </div>
+    <!-- ... el resto de tu código ... -->
 </body>
 </html>
