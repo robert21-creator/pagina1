@@ -7,10 +7,10 @@
 
         .slider {
             width: 100%;
-            height: auto; /* Esto permite que la altura del contenedor se ajuste a la de las imágenes. */
+            height: auto; 
             overflow: hidden;
             display: flex;
-            justify-content: center; /* Esto centra las imágenes */
+            justify-content: center; 
         }
 
         .slides {
@@ -19,7 +19,7 @@
         }
 
         .slides img {
-            width: 80%; /* Se ajusta el ancho de las imágenes al 80% del contenedor padre. */
+            width: 80%; 
             height: auto;
         }
 
@@ -32,7 +32,8 @@
             70% { transform: translateX(-200%); }
             75% { transform: translateX(-300%); }
             95% { transform: translateX(-300%); }
-            100% { transform: translateX(-400%); }
+            96% { transform: translateX(-400%); } /* Se mueve rápidamente a la última imagen */
+            100% { transform: translateX(0%); } /* Vuelve rápidamente al comienzo */
         }
     </style>
 </head>
@@ -50,7 +51,6 @@
             <img src="https://github.com/robert21-creator/pagina1/raw/main/3.png" alt="Imagen 3">
             <img src="https://github.com/robert21-creator/pagina1/raw/main/4.png" alt="Imagen 4">
             <img src="https://github.com/robert21-creator/pagina1/raw/main/5.png" alt="Imagen 5">
-            <img src="https://github.com/robert21-creator/pagina1/raw/main/1.png" alt="Imagen 1"> <!-- Añadimos la primera imagen al final para que no haya un espacio en blanco al terminar el ciclo. -->
         </div>
     </div>
 
