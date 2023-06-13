@@ -5,12 +5,26 @@
     <style>
         /* ... tus otros estilos ... */
 
+        .menu {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
         .slider {
-            width: 100%;
+            width: 50%; /* Reducimos el ancho del slider al 50% */
             height: auto; 
             overflow: hidden;
             display: flex;
             justify-content: center; 
+            margin: auto; /* Centramos el slider */
         }
 
         .slides {
@@ -19,7 +33,7 @@
         }
 
         .slides img {
-            width: 80%; 
+            width: 100%; 
             height: auto;
         }
 
@@ -32,16 +46,21 @@
             70% { transform: translateX(-200%); }
             75% { transform: translateX(-300%); }
             95% { transform: translateX(-300%); }
-            96% { transform: translateX(-400%); } /* Se mueve rápidamente a la última imagen */
-            100% { transform: translateX(0%); } /* Vuelve rápidamente al comienzo */
+            96% { transform: translateX(-400%); } 
+            100% { transform: translateX(0%); } 
         }
     </style>
 </head>
 <body>
-    <!-- ... tu código existente ... -->
+    <div class="header">
+        <h1>Mi Negocio de Cambio</h1>
+        <p>Servicios de cambio de divisas de confianza</p>
+    </div>
 
     <div class="menu">
-        <!-- ... tu código de menú ... -->
+        <a href="#contacto">Contacto</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#terminos">Términos</a>
     </div>
 
     <div class="slider">
@@ -57,3 +76,4 @@
     <!-- ... el resto de tu código ... -->
 </body>
 </html>
+
