@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
     <meta charset="UTF-8">
-    
     <title>Mi Negocio de Cambio</title>
     <style>
-        /* ... tus otros estilos ... */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
 
         .menu {
             background-color: #333;
@@ -36,7 +46,7 @@
         }
 
         .slides img {
-            width: 100%; 
+            width: 80%; 
             height: auto;
         }
 
@@ -51,6 +61,17 @@
             95% { transform: translateX(-300%); }
             96% { transform: translateX(-400%); } 
             100% { transform: translateX(0%); } 
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -76,6 +97,8 @@
         </div>
     </div>
 
-    <!-- ... el resto de tu código ... -->
+    <div class="footer">
+        <p>RM Intermediación de Negocios y Consultoría LTDA</p>
+    </div>
 </body>
 </html>
